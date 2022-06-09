@@ -1,4 +1,17 @@
 #!/bin/sh
 
+PROJECT =`php -r "echo dirname(realpath('$0'))"`
+STAGED_PHP_FILES=`git diff --cached --name-only --diff-filter=ACMR HEAD|grep \\\\.php$`  
+
 echo "Starting Ethereum precommit..."
+
+echo "$PROJECT/$FILE"
+exit 1
+
+if ["$STAGED_PHP_FILES" != ""]; then
+  echo "Linting PHP code..."
+  for FILE in $STAGED_PHP_FILES; do
+    php -l -d display_errors=0 "$PROJECT/$FILE"
+  done
+fi
 
