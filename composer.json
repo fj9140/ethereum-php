@@ -1,0 +1,35 @@
+{
+  "name": "fj9140/ethereum-php",
+  "description": "A library integrating Ethereum with typed PHP",
+  "require": {
+    "php":">=8.1",
+    "pear/math_biginteger":"^1.0"
+  },
+  "authors": [
+    {
+      "name": "fj9140",
+      "email":"fj9140@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpstan/phpstan": "^1.7",
+    "phpunit/phpunit": "^9.5",
+    "friendsofphp/php-cs-fixer": "^3.8",
+    "nexusphp/cs-config": "^3.4"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "bash -c \"if [ ! -f .git/hooks/pre-commit ]; then bash scripts/setup.sh; fi\""
+    ],
+    "cs":[
+      "php-cs-fixer fix --ansi --verbose --dry-run --diff"
+    ],
+    "cs-fix":[
+      "php-cs-fixer fix --ansi --verbose --diff"
+    ]
+  },
+  "scripts-descriptions": {
+    "cs":"Check the coding style",
+    "cs-fix":"Fix the coding style"
+  }
+}
