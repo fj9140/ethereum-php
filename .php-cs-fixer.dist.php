@@ -41,4 +41,4 @@ return Nexus\CsConfig\Factory::create(new Nexus\CsConfig\Ruleset\Nexus81(), [], 
     'Ethereum library for PHP',
     'fj9140',
     "fj9140@gmail.com",
-);aa
+);
