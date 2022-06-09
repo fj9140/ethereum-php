@@ -19,7 +19,7 @@
   },
   "scripts": {
     "post-update-cmd": [
-      "bash -c \"if [ ! -f .git/hooks/pre-commit ]; then bash scripts/setup.sh; fi\""
+      "bash -c \"if [ -f scripts/setup.sh ]; then bash scripts/setup.sh; fi\""
     ],
     "cs":[
       "php-cs-fixer fix --ansi --verbose --dry-run --diff"
