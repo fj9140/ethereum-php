@@ -40,5 +40,5 @@ $options = [
 return Nexus\CsConfig\Factory::create(new Nexus\CsConfig\Ruleset\Nexus81(), [], $options)->forLibrary(
     'Ethereum library for PHP',
     'fj9140',
-    "fj9140@gmail.com",
+    'fj9140@gmail.com',
 );
