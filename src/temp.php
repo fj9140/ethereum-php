@@ -1,3 +1,6 @@
 <?php
 
-$a="";
+function a():bool{
+    $a="";
+    return 1;
+}
