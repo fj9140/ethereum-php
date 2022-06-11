@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Ethereum\\Sha3StaticTest::testGetDefinition":4,"Ethereum\\EthereumTest::testSimple":4},"times":{"Ethereum\\Sha3StaticTest::testStrings":0.005,"Ethereum\\Sha3StaticTest::testEnsureHexPrefix":0,"Ethereum\\Sha3StaticTest::testSha3":0.004,"Ethereum\\Sha3StaticTest::testGetDefinition":0,"Ethereum\\EthereumTest::testSimple":0.006}}
