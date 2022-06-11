@@ -2,5 +2,6 @@
 
 function a():bool{
     $a="";
-    return 1; 
+    return false; 
 }
+ 
