@@ -19,3 +19,16 @@ if [ "$STAGED_PHP_FILES" != "" ]; then
   done
 fi
 
+if [ "$FILES" != "" ]; then
+  echo "Running PHPStan..."
+
+  # Run on whole codebase
+  php ./vendor/bin/phpsan analyse
+
+  if [ $? != 0 ]; then
+    echo "Fix the phpstan error(s) before commit."
+    exit 1
+  fi
+
+fi
+
